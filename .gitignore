@@ -118,6 +118,8 @@ Desktop.ini
 # Materials
 **/Materials
 **/AAAnimators
+**/TextMesh Pro
+**/StarterAssets
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
