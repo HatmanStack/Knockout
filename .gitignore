@@ -116,11 +116,10 @@ ehthumbs.db
 Desktop.ini
 
 # Materials
-**/Materials
-**/AAAnimators
-**/TextMesh Pro
-**/StarterAssets
-**/Elizabeth Warren caricature
+/Assets/AAAnimators
+/Assets/TextMesh Pro
+/Assets/StarterAssets
+/Assets/Elizabeth Warren caricature
 
 
 # Recycle Bin used on file shares
