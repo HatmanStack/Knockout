@@ -9,11 +9,22 @@ public class RotateCamera : MonoBehaviour
     //Assign a GameObject in the Inspector to rotate around
     public GameObject target;
     public GameObject camera;
+    private bool notRotating;
 
     public void Rotate()
     {
+        notRotating = false;
         StartCoroutine("rotateCamera");
     }
+
+    public void Update(){
+        
+        if(notRotating){
+            
+            camera.transform.rotation = Quaternion.Euler(17, 0, 0);
+        }
+    }
+    
 
     IEnumerator rotateCamera()
     {
@@ -26,6 +37,9 @@ public class RotateCamera : MonoBehaviour
             camera.transform.position +=  camera.transform.forward * 8 * Time.deltaTime;
             yield return 0;
         }
+        camera.transform.position = new Vector3(0,15,-10);
+        camera.transform.rotation = Quaternion.Euler(17, 0, 0);
+        notRotating = true;
         yield return true;
     }
  
